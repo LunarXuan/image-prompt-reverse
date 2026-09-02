@@ -24,10 +24,11 @@ description: Analyze user-provided reference images and reverse-engineer high-fi
 2. 内部判断图片的用途类型、媒介类型和主体类型。
 3. 阅读并按照 [analysis-framework.md](references/analysis-framework.md) 分析通用视觉维度。
 4. 根据主体类型，只读取并应用 [category-guides.md](references/category-guides.md) 中相关的专项规则。
-5. 提炼最不能丢失的 3—5 个复现关键要素，优先从构图、主体特征、光线、材质、背景几何、色彩关系、空间层次和关键情绪中选择。
-6. 将这些视觉锚点写在正向 Prompt 前 1/3，随后补充其他支持性细节。
-7. 明确媒介边界，并在 Negative Prompt 中排除容易混淆的错误媒介和常见生成缺陷。
-8. 输出最终提示词，不展示内部分析。
+5. 仅当图片的主要媒介属于插画时，额外读取并应用 [illustration-style.md](references/illustration-style.md)。摄影、3D 渲染、产品图、字体与 Logo、UI、平面设计及其他非插画媒介必须跳过该文件；混合媒介只有在插画语言占主导时才应用。
+6. 提炼最不能丢失的 3—5 个复现关键要素，优先从构图、主体特征、光线、材质、背景几何、色彩关系、空间层次和关键情绪中选择；插画按照插画专项规范选择画风锚点。
+7. 将这些视觉锚点写在正向 Prompt 前 1/3，随后补充其他支持性细节。
+8. 明确媒介边界，并在 Negative Prompt 中排除容易混淆的错误媒介和常见生成缺陷。
+9. 输出最终提示词，不展示内部分析。
 
 ## 媒介边界
 
