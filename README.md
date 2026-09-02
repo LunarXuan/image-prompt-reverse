@@ -50,6 +50,10 @@ references/category-guides.md    分类专项分析规则
 agents/openai.yaml               Codex 调用界面配置
 ```
 
+### 友情链接
+
+欢迎访问 [LINUX DO](https://linux.do/latest)，浏览社区最新主题与讨论。
+
 <a id="english"></a>
 
 ## English
@@ -97,3 +101,7 @@ references/analysis-framework.md Shared image-analysis framework
 references/category-guides.md    Category-specific analysis rules
 agents/openai.yaml               Codex invocation metadata
 ```
+
+### Friendly Link
+
+Visit [LINUX DO](https://linux.do/latest) to browse the community’s latest topics and discussions.
