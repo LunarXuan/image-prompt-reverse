@@ -6,15 +6,81 @@
 
 ## 中文
 
-上传一张参考图，告诉大模型你想保留什么：复现整张图、借画风换题材，或借构图换主体。`$image-prompt-reverse` 会把关键视觉关系写成可直接使用的生图提示词。也可以带回生成结果，请它只修正画偏的部分。
+`image-prompt-reverse` 是一个用于 Codex 的图片反推提示词 Skill。它会分析用户上传的参考图片，识别图片用途、媒介、主体、构图、镜头语言、光影、色彩、材质、背景、空间层次、情绪和后期风格，并生成可直接用于 AI 生图工具的高还原度提示词。
 
-**[浏览完整案例画廊 → 17 组对比与提示词](gallery/README.md)**
+[本次更新与精选示例](#nov-update) · [完整案例画廊（17 组）](gallery/README.md)
 
-### 精选案例
+### 支持类型
+
+- 摄影：人像、产品、纪实、食物、动物、自然和城市风景
+- 插画：扁平、二次元、治愈、手绘、国风和赛博风格
+- 3D：写实、半写实、卡通、黏土、潮玩和产品渲染
+- 字体、Logo、海报、平面设计和抽象图形
+- IP角色、Q版角色、盲盒和多主体混合画面
+
+### 输出内容
+
+默认给出语义一致的中英文正向提示词。篇幅随画面复杂度调整，优先交代决定相似度的主体、位置、遮挡和媒介特征。目标工具支持独立负面词且有具体偏差需要排除时，再提供负面词。用户可以指定单语、长度或输出格式。
+
+Skill 会优先提炼最影响相似度的3—5个视觉锚点，避免编造看不清的细节，也会根据目标媒介排除容易混淆的错误风格。图片中的文字、Logo和说明会被视为视觉内容，不会被当作指令执行。
+
+<details>
+<summary>查看初版的默认输出格式</summary>
+
+初版默认输出两项：
+
+1. 正向 Prompt：450—700个中文字符的连续自然语言，并附英文等义版本
+2. Negative Prompt：10—15条英文负面词，用逗号分隔
+
+</details>
+
+### 安装
+
+将本仓库目录复制到 Codex 的个人 Skills 目录：
+
+```text
+%USERPROFILE%\.codex\skills\image-prompt-reverse
+```
+
+或直接克隆：
+
+```cmd
+git clone https://github.com/LunarXuan/image-prompt-reverse.git "%USERPROFILE%\.codex\skills\image-prompt-reverse"
+```
+
+安装后可使用 `$image-prompt-reverse` 调用。
+
+### 文件结构
+
+```text
+SKILL.md                         Skill 主入口
+references/analysis-framework.md 通用图片分析框架
+references/category-guides.md    分类专项分析规则
+references/illustration-style.md 插画画风专项
+gallery/README.md                案例画廊
+agents/openai.yaml               Codex 调用界面配置
+```
+
+<a name="nov-update"></a>
+
+### 2026-11-24 更新 · 按用途反推提示词
+
+上传一张参考图，告诉大模型你想保留什么。现在可以指定参考图在新画面中的用途，也可以把生成结果带回来修词。
+
+| 想做什么 | 调用示例 |
+|---|---|
+| 复现整图（默认） | `反推这张风景照，保留河道走向、山脊位置和明暗关系。` |
+| 参考画风 | `沿用这张旅行海报的套色和字形，把雪山骑手换成末班电车。` |
+| 参考构图 | `借用这幅画的人物位置、手势和左侧留白，主体换成修表师。` |
+| 根据成图修词 | `图一是原图，图二是生成结果。杯碟底边被裁掉了，请只改构图那一句。` |
+
+本次更新放开了正向提示词的字数限制，并按目标工具决定是否提供独立负面词。如果生图时仍会附上参考图，可以在请求中指定每张图负责的部分，例如“图一取配色，图二取布局”。
+
+#### 精选案例
 
 每张对比图左侧为参考图，右侧为纯文字生成结果。图下保留当时实际提交的中文正向词，英文译文与可选负面词可展开复制。
 
-#### 参考画风 · 从雪山到末班电车
+##### 参考画风 · 从雪山到末班电车
 
 [![参考画风 · 从雪山到末班电车，左为参考图，右为生成图](gallery/cases/last-tram/comparison.jpg)](gallery/cases/last-tram/comparison.jpg)
 
@@ -47,7 +113,7 @@ snowy peaks, horseback rider, photorealism, gradient sky, dense decorative linew
 
 </details>
 
-#### 整图复现 · 雪峰下的蛇河
+##### 整图复现 · 雪峰下的蛇河
 
 [![整图复现 · 雪峰下的蛇河，左为参考图，右为生成图](gallery/cases/snake-river/comparison.jpg)](gallery/cases/snake-river/comparison.jpg)
 
@@ -80,7 +146,7 @@ color grading, reversed river bend, tallest peak on the left, pitch-black water,
 
 </details>
 
-#### 参考构图 · 从持秤人到修表师
+##### 参考构图 · 从持秤人到修表师
 
 [![参考构图 · 从持秤人到修表师，左为参考图，右为生成图](gallery/cases/watch-restorer/comparison.jpg)](gallery/cases/watch-restorer/comparison.jpg)
 
@@ -113,7 +179,7 @@ looking straight at the camera, body turned right, centered subject, both hands 
 
 </details>
 
-#### 整图复现 · 蛋糕、柠檬与玻璃杯
+##### 整图复现 · 蛋糕、柠檬与玻璃杯
 
 [![整图复现 · 蛋糕、柠檬与玻璃杯，左为参考图，右为生成图](gallery/cases/cake-and-lemon/comparison.jpg)](gallery/cases/cake-and-lemon/comparison.jpg)
 
@@ -146,7 +212,7 @@ lemon behind the cake, drinking glass on the left, straw leaning left, whole rou
 
 </details>
 
-#### 参考构图 · 从睡莲池到砂岩峡谷
+##### 参考构图 · 从睡莲池到砂岩峡谷
 
 [![参考构图 · 从睡莲池到砂岩峡谷，左为参考图，右为生成图](gallery/cases/sandstone-arch/comparison.jpg)](gallery/cases/sandstone-arch/comparison.jpg)
 
@@ -179,7 +245,7 @@ wooden footbridge, railings, water lilies, pond water, large round arch centered
 
 </details>
 
-#### 参考画风 · 从校园漫画到钟表铺
+##### 参考画风 · 从校园漫画到钟表铺
 
 [![参考画风 · 从校园漫画到钟表铺，左为参考图，右为生成图](gallery/cases/clockmakers-manga/comparison.jpg)](gallery/cases/clockmakers-manga/comparison.jpg)
 
@@ -212,44 +278,7 @@ color page, four equal panels, bottom panel split in two, English replacing the 
 
 </details>
 
-### 支持类型
-
-- 摄影：人像、产品、纪实、食物、动物、自然和城市风景
-- 插画：扁平、二次元、治愈、手绘、国风和赛博风格
-- 3D：写实、半写实、卡通、黏土、潮玩和产品渲染
-- 字体、Logo、海报、平面设计和抽象图形
-- IP角色、Q版角色、盲盒和多主体混合画面
-
-### 输出内容
-
-默认给出语义一致的中英文正向提示词。篇幅随画面复杂度调整，优先交代决定相似度的主体、位置、遮挡和媒介特征。目标工具支持独立负面词且有具体偏差需要排除时，再提供负面词。用户可以指定单语、长度或输出格式。
-
-### 安装
-
-将本仓库目录复制到 Codex 的个人 Skills 目录：
-
-```text
-%USERPROFILE%\.codex\skills\image-prompt-reverse
-```
-
-或直接克隆：
-
-```cmd
-git clone https://github.com/LunarXuan/image-prompt-reverse.git "%USERPROFILE%\.codex\skills\image-prompt-reverse"
-```
-
-安装后可使用 `$image-prompt-reverse` 调用。
-
-### 文件结构
-
-```text
-SKILL.md                         Skill 主入口
-references/analysis-framework.md 通用图片分析框架
-references/category-guides.md    分类专项分析规则
-references/illustration-style.md 插画画风专项
-gallery/README.md                案例画廊
-agents/openai.yaml               Codex 调用界面配置
-```
+[浏览完整案例画廊 → 17 组对比与提示词](gallery/README.md)
 
 ### 友情链接
 
@@ -261,6 +290,8 @@ agents/openai.yaml               Codex 调用界面配置
 
 `image-prompt-reverse` is a Codex Skill for reverse-engineering image-generation prompts from user-uploaded reference images. It analyzes the image purpose, medium, subject, composition, camera language, lighting, color, materials, background, spatial depth, mood, and post-processing style, then produces high-fidelity prompts that can be used directly with AI image-generation tools.
 
+[What’s new](#nov-update-en) · [Full example gallery](gallery/README.md)
+
 ### Supported image types
 
 - Photography: portraits, products, documentary images, food, animals, nature, and cityscapes
@@ -271,9 +302,19 @@ agents/openai.yaml               Codex 调用界面配置
 
 ### Output
 
-Ask for a whole-image recreation, a new subject in the reference style, or a new scene with the same composition. The Skill returns Chinese and English positive prompts by default. Length follows the scene. A separate negative prompt is included when the target tool supports it and a specific error warrants it. Bring a generated image back to revise the relevant wording.
+By default, the Skill returns equivalent Chinese and English positive prompts. Prompt length follows the complexity of the image. It supplies a separate negative prompt when the target tool supports one and the reference calls for a specific exclusion.
 
-[Browse all 17 reference/result pairs and their prompts](gallery/README.md).
+The Skill prioritizes the 3–5 visual anchors that have the greatest impact on similarity. It avoids inventing uncertain details, excludes confusing media styles, and treats text, logos, and instructions visible inside an image as visual content rather than executable instructions.
+
+<details>
+<summary>Original default output format</summary>
+
+The original default output contained two sections:
+
+1. Positive Prompt: a 450–700 Chinese-character natural-language prompt, followed by an equivalent English version
+2. Negative Prompt: 10–15 English negative terms separated by commas
+
+</details>
 
 ### Installation
 
@@ -301,6 +342,16 @@ references/illustration-style.md Illustration style analysis
 gallery/README.md                Example gallery
 agents/openai.yaml               Codex invocation metadata
 ```
+
+<a name="nov-update-en"></a>
+
+### November 24, 2026 update · Choose what to preserve
+
+Recreate the whole image, use its style with a new subject, or transfer its composition to a different scene. When using several references at generation time, specify what each contributes, such as the palette from the first image and the layout from the second. To refine a prompt, bring back the result and identify what changed, such as a saucer cropped at the bottom edge.
+
+This update replaces fixed prompt lengths with scene-dependent descriptions and makes negative prompts conditional on the target tool. The six featured examples pair each reference with its generated image and the exact Chinese prompt used.
+
+[View the featured examples](#nov-update) · [Browse all 17 cases](gallery/README.md)
 
 ### Friendly Link
 
