@@ -347,13 +347,24 @@ agents/openai.yaml               Codex invocation metadata
 
 <a name="nov-update-en"></a>
 
-### November 24, 2026 update · Choose what to preserve
+### 2026-11-24 update · Choose what to borrow from a reference and refine specific parts of a prompt
 
-Recreate the whole image, use its style with a new subject, or transfer its composition to a different scene. When using several references at generation time, specify what each contributes, such as the palette from the first image and the layout from the second. To refine a prompt, bring back the result and identify what changed, such as a saucer cropped at the bottom edge.
+You can now upload a reference image and tell the model to borrow its style or composition. If the generated image misses a detail, show the model the result and ask it to revise the part of the prompt that controls that detail.
 
-This update replaces fixed prompt lengths with scene-dependent descriptions and makes negative prompts conditional on the target tool. The six featured examples pair each reference with its generated image and the exact Chinese prompt used.
+| What you want to do | What to ask |
+|---|---|
+| Recreate the whole image (default) | `Write a prompt for this landscape photo. Keep the course of the river, the position of the ridge, and the pattern of light and shadow.` |
+| Borrow the style | `Keep the travel poster’s layered colors and lettering. Replace the rider in the snowy mountains with the last tram of the night.` |
+| Borrow the composition | `Keep the figure’s position, the hand gesture, and the open space on the left. Make the subject a watchmaker.` |
+| Refine a prompt using the generated image | `Image 1 is the reference and image 2 is the result. The bottom edge of the saucer was cut off. Revise only the sentence about framing.` |
 
-[View the featured examples](#nov-update) · [Browse all 17 cases](gallery/README.md)
+Positive prompts no longer have a fixed length. The Skill provides a separate negative prompt when the target tool supports one and there is a specific detail to exclude.
+
+If you plan to attach reference images when generating the image, specify what each one should contribute when you invoke the Skill. For example, `Use the color palette from image 1 and the layout from image 2.`
+
+The six featured examples pair each reference with its generated image and the exact Chinese prompt used.
+
+[View the featured examples](#精选案例) · [Browse all 17 cases](gallery/README.md)
 
 ### Friendly Link
 
