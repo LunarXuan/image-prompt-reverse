@@ -1,0 +1,8 @@
+The Tetons and the Snake River / Ansel Adams / U.S. National Archives
+https://catalog.archives.gov/id/519904
+美国国家档案馆藏联邦政府作品。使用美国国家档案馆在线扫描。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：成图保留了右下进入、向左回弯再向右收窄的明亮河道，以及左下树影和偏右的最高峰。 河湾转折更靠左，远山位置更高，天空变窄。高光散布到整排雪峰，原图由河水和左上亮天空形成的对比更强。

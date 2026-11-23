@@ -1,0 +1,8 @@
+The Melon / Édouard Manet · 约 1880 · 美国国家美术馆
+https://www.nga.gov/artworks/164939-melon
+馆方标记为 public domain。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：鞋面能看到堆起的赭黄笔触，承托面仍用蓝灰横笔。鞋的造型完整，画中没有带入甜瓜。 背景刷痕更重，鞋面高光比原图更暗。原画宽高约 1.20，生成图达 2.00，横向拉得比提示词要求更开。

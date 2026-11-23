@@ -1,0 +1,10 @@
+Wikipe-tan full length / Kasuga / Wikimedia Commons
+https://commons.wikimedia.org/wiki/File:Wikipe-tan_full_length.png
+CC BY-SA 3.0。参考文件通过图像缓存取得，同尺寸 PNG；展示时等比缩放。
+https://creativecommons.org/licenses/by-sa/3.0/
+本案例对应的改编图像依同一许可提供。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。另启用透明背景输出。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：双马尾、两侧拼图夹、藏青洋装、米白围裙及完整站姿可辨。生成 PNG 确有从 0 到 255 的透明通道。 发色由灰蓝偏向灰紫，马尾变卷，发夹缩小。模型补出头顶褶边发箍和有鞋扣的鞋，原图的侧转感也减弱。

@@ -1,0 +1,8 @@
+Eileen Collins, astronaut / NASA / scikit-image
+https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.astronaut
+资料页标为公有领域。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：人物朝向、橙色航天服、宽颈环及左旗右模型的位置正确。右下仍有带白色反光的黑头盔。 成图人物更靠左，右下头盔露出的面积更小。发型、脸形与臂章有变化，还自行补出了清晰的 NASA 字样。

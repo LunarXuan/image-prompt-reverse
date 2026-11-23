@@ -1,0 +1,8 @@
+The Japanese Footbridge / Claude Monet / National Gallery of Art
+https://www.nga.gov/artworks/74796-japanese-footbridge
+馆方公有领域开放图像。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：石拱横跨画面上部，两端伸出画外。浅色碎石横带随河床向远处变密，底边弧形阴影也出现了。 桥下原是连续的深绿植被和水面，石拱下增加了一大片蓝天。横拱位置相近，中部留白与视线落点随之改变。

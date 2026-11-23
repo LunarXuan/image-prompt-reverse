@@ -1,0 +1,10 @@
+Wikipe-tan manga page1 / Kasuga / Wikimedia Commons
+https://commons.wikimedia.org/wiki/File:Wikipe-tan_manga_page1.jpg
+CC BY-SA 3.0。参考图由源站 JPEG 经图像缓存转为同尺寸 PNG；展示时等比缩放。
+https://creativecommons.org/licenses/by-sa/3.0/
+本案例对应的改编图像依同一许可提供。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：上两格、下通栏及右修理、左反应的叙事顺序正确。标题“准点！”和对白“响了！”均能读出，人物和事件已换成修钟。 原页的细线、宽白边和人物留白变成了粗墨、大特写与窄页边。左上另有“咔哒…”音效，来自提示词里的听觉描述。

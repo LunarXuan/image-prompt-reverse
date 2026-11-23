@@ -1,0 +1,8 @@
+See America. Welcome to Montana / 美国国会图书馆 · 馆藏号 96503136
+https://www.loc.gov/pictures/item/96503136/
+WPA 旅行海报馆藏，使用馆方公开扫描件。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：橙、纸白与炭黑分出车身和站棚，底部空心字 LAST TRAM 准确。没有带入雪山或骑手。 橙色更艳，电线、车窗和站台细节更多，原画的大色块更概括。

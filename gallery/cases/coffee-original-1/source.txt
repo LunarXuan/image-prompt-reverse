@@ -1,0 +1,8 @@
+浓缩咖啡 / Rachel Michetti · Pikolo Espresso Bar / scikit-image
+https://scikit-image.org/docs/0.22.x/api/skimage.data.html#skimage.data.coffee
+摄影师以 CC0 发布。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：杯柄朝左下，匙头落在右下，内外瓷色和木纹方向都对。 杯碟放得过大，碟底和杯沿贴边或被裁。匙柄也比原图更斜，光色偏橙。

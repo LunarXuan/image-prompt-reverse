@@ -1,0 +1,8 @@
+The Railway / Édouard Manet · 1873 · 美国国家美术馆
+https://www.nga.gov/artworks/43624-railway
+馆方标记为 public domain。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：左人坐着正对镜头，右人背身伸臂；深色窗框接替了铁栅，膝上乐谱也回到了对应位置。 原图两人头顶接近，成图右人明显高于左人。原图向左上扬的手臂变得接近水平。

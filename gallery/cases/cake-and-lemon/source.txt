@@ -1,0 +1,8 @@
+Still Life with Cake, Lemon, Strawberries, and Glass / John Frederick Peto / National Gallery of Art
+https://www.nga.gov/artworks/164947-still-life-cake-lemon-strawberries-and-glass
+馆方开放图像。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：左盘、中间蛋糕、右杯的顺序准确。柠檬切面遮住蛋糕左下角，前景有一颗散果，黄色吸管从顶边出画。 原图蛋糕向右倾斜，成图改成了平底直立的厚片。只写“小红浆果”也留下歧义，模型画出了成串、表皮发亮的小果。

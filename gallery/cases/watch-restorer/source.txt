@@ -1,0 +1,8 @@
+Woman Holding a Balance / Johannes Vermeer / National Gallery of Art
+https://www.nga.gov/artworks/1236-woman-holding-balance
+馆方公有领域开放图像。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：左上窗光、右侧低头的人物、居中的悬链和压在工作台前沿的另一只手都成立。左上空墙也保住了。 成图抬高了悬链的手、压低了扶台的手，两手间距比原画大；挂图从成片的暗背景缩成了右上角一小块。

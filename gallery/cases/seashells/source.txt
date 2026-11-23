@@ -1,0 +1,8 @@
+Roses / Vincent van Gogh / National Gallery of Art
+https://www.nga.gov/artworks/72328-roses
+馆方公有领域开放图像。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：奶白、灰蓝和淡粉用在贝壳亮面，颜料形成凸起笔脊；背景的薄荷绿斜笔与桌面的横笔都能辨认。没有带入花瓶或玫瑰。 原画在白花之间穿插大块深绿和深色勾线，成图的壳间暗隙较窄，色块分隔变弱；壳面的方块状笔触也更整齐。

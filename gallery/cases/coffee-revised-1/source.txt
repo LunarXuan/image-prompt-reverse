@@ -1,0 +1,8 @@
+浓缩咖啡 / Rachel Michetti · Pikolo Espresso Bar / scikit-image
+https://scikit-image.org/docs/0.22.x/api/skimage.data.html#skimage.data.coffee
+摄影师以 CC0 发布。
+
+测试方式：内置 imagegen 仅接收 positive.zh.txt 中的文字。
+positive.en.txt 为事后译文，两份 negative TXT 为可选补充，三者均未经本次生成验证。
+
+观察：补写占比和边距后，四周碟边可见。 碟子仍稍宽于原图，杯壁有更明显的咖啡痕。
