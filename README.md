@@ -1,6 +1,6 @@
 # Image Prompt Reverse
 
-<p align="center"><a href="#中文">中文</a> · <a href="#english">English</a></p>
+<p align="center"><a href="#中文">中文</a> · <a href="#english">English</a> · <a href="README.ja.md">日本語</a></p>
 
 <a id="中文"></a>
 
