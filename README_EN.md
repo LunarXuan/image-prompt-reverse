@@ -311,6 +311,16 @@ image-prompt-reverse/
 
 ---
 
+## Companion Video Skill (I2V Workflow)
+
+To extend this Skill into **AI video generation (I2V / first-last-frame)**, pair it with [**`video-prompt-reverse`**](https://github.com/LunarXuan/video-prompt-reverse) for a two-skill visual pipeline:
+
+1. Run `$video-prompt-reverse --mode i2v` on a reference clip to extract clean per-shot opening keyframes and a motion-first prompt.
+2. Pass the opening keyframe to **`$image-prompt-reverse`** (using layout transfer or style transfer) to generate a fresh, original opening frame with a new subject or aesthetic.
+3. Feed the new opening frame together with the `i2v` prompt into Seedance, Kling, MiniMax, Veo, or Wan to preserve the reference camera choreography and pacing on brand-new content.
+
+---
+
 ## Community & License
 
 - **Community**: Visit [LINUX DO](https://linux.do/latest) to browse the community's latest topics and discussions.

@@ -310,6 +310,16 @@ image-prompt-reverse/
 
 ---
 
+## 配套视频反推联动
+
+如果你需要把参考图或参考视频延伸到 **AI 视频生成（I2V / 首尾帧）**，可以配合同系列项目 [**`video-prompt-reverse`**](https://github.com/LunarXuan/video-prompt-reverse) 组成双 Skill 视觉工作流：
+
+1. 用 `$video-prompt-reverse --mode i2v` 拆解参考视频，自动导出干净的各镜首帧与纯动态/运镜提示词；
+2. 将首帧交给本 Skill（`$image-prompt-reverse`），通过 **参考构图** 或 **参考画风** 重绘一张无原片版权/主体冲突的新首帧；
+3. 把新首帧与 `i2v` 动态提示词送入即梦（Seedance）、可灵（Kling）、海螺（MiniMax）、Veo 或 Wan，即可在保留原片运镜与剪辑节奏的前提下生成全新原创视频。
+
+---
+
 ## 友情链接与开源许可
 
 - **友情链接**：欢迎访问 [LINUX DO](https://linux.do/latest)，浏览社区最新主题与讨论。
