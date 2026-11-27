@@ -1,6 +1,6 @@
 <div align="center">
 
-# Image Prompt Reverse
+# Image Prompt Reverse · 图片反推提示词
 
 **面向 AI 生图的高还原度参考图反推 Skill：整图复现 · 画风迁移 · 构图复用 · 成图定点修词**
 
