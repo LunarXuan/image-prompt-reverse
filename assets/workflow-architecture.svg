@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 470" width="1180" height="470" role="img" aria-label="Image Prompt Reverse architecture and four-mode workflow">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <filter id="shadow" x="-6%" y="-6%" width="112%" height="118%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#64748B"/>
+    </marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#0D9488"/>
+    </marker>
+    <style>
+      .f { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+      .h1 { font-size: 17px; font-weight: 700; fill: #0F172A; }
+      .sub { font-size: 12px; fill: #475569; }
+      .tag { font-size: 10.5px; font-weight: 700; letter-spacing: 0.6px; }
+      .ct { font-size: 14.5px; font-weight: 700; fill: #0F172A; }
+      .it { font-size: 12.5px; font-weight: 600; fill: #1E293B; }
+      .id { font-size: 11px; fill: #475569; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; fill: #64748B; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1180" height="470" rx="16" fill="url(#bg)" stroke="#E2E8F0"/>
+
+  <!-- Header -->
+  <text x="34" y="38" class="f h1">Image Prompt Reverse · 4-Mode Visual Analysis &amp; Closed-Loop Refinement Architecture</text>
+  <text x="34" y="58" class="f sub">Progressive-disclosure skill design: route by intent, lock 3–5 visual anchors, decouple content from style, and patch surgically</text>
+
+  <!-- COLUMN 1: INPUT & INTENT ROUTING (x=30..294, w=264) -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="78" width="264" height="314" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+  </g>
+  <rect x="30" y="78" width="264" height="5" rx="2.5" fill="#4F46E5"/>
+  <rect x="46" y="96" width="90" height="20" rx="10" fill="#EEF2FF"/>
+  <text x="91" y="110" text-anchor="middle" class="f tag" fill="#4338CA">01 · INTENT</text>
+  <text x="46" y="136" class="f ct">Reference + Task Mode</text>
+
+  <rect x="46" y="152" width="232" height="50" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="46" y="152" width="4" height="50" rx="2" fill="#4F46E5"/>
+  <text x="60" y="172" class="f it">Whole-Image Recreation</text>
+  <text x="60" y="190" class="f id">Lock subject, occlusion &amp; medium</text>
+
+  <rect x="46" y="210" width="232" height="50" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="46" y="210" width="4" height="50" rx="2" fill="#D97706"/>
+  <text x="60" y="230" class="f it">Style Transfer</text>
+  <text x="60" y="248" class="f id">Borrow look; strip original subject</text>
+
+  <rect x="46" y="268" width="232" height="50" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="46" y="268" width="4" height="50" rx="2" fill="#0D9488"/>
+  <text x="60" y="288" class="f it">Composition Transfer</text>
+  <text x="60" y="306" class="f id">Map framing, scale &amp; open space</text>
+
+  <rect x="46" y="326" width="232" height="50" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="46" y="326" width="4" height="50" rx="2" fill="#E11D48"/>
+  <text x="60" y="346" class="f it">Multi-Ref &amp; Prompt Repair</text>
+  <text x="60" y="364" class="f id">Per-image roles or surgical patch</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="300" y1="235" x2="342" y2="235" stroke="#64748B" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- COLUMN 2: PROGRESSIVE EVIDENCE ENGINE (x=350..814, w=464) -->
+  <g filter="url(#shadow)">
+    <rect x="350" y="78" width="464" height="314" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+  </g>
+  <rect x="350" y="78" width="464" height="5" rx="2.5" fill="#D97706"/>
+  <rect x="366" y="96" width="136" height="20" rx="10" fill="#FFFBEB"/>
+  <text x="434" y="110" text-anchor="middle" class="f tag" fill="#B45309">02 · EVIDENCE ENGINE</text>
+  <text x="366" y="136" class="f ct">3-Layer Progressive Visual Inspection</text>
+
+  <!-- Layer A (w=432, x=366..798) -->
+  <rect x="366" y="152" width="432" height="68" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="380" y="172" class="f it">12-Dimension Universal Framework</text>
+  <text x="784" y="172" text-anchor="end" class="f mono">analysis-framework.md</text>
+  <text x="380" y="191" class="f id">Purpose · Medium · Subject · Composition · Camera · Lighting</text>
+  <text x="380" y="207" class="f id">Color · Material · Depth · Mood · Post-Processing · Anchors</text>
+
+  <!-- Layer B -->
+  <rect x="366" y="228" width="432" height="68" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="380" y="248" class="f it">15 Category &amp; Medium Playbooks</text>
+  <text x="784" y="248" text-anchor="end" class="f mono">category-guides.md</text>
+  <text x="380" y="267" class="f id">Portrait · Photo · Product · Typography/Logo · Landscape · 3D</text>
+  <text x="380" y="283" class="f id">IP/Chibi/Blind-Box · Animals · Food · Poster · Multi-Subject</text>
+
+  <!-- Layer C -->
+  <rect x="366" y="304" width="432" height="72" rx="8" fill="#FFFBEB" stroke="#FDE68A"/>
+  <text x="380" y="324" class="f it">Illustration Decoupling &amp; Conflict Resolver</text>
+  <text x="784" y="324" text-anchor="end" class="f mono">illustration-style.md</text>
+  <text x="380" y="343" class="f id">Content Skeleton vs 10-Dim Style Fingerprint + Leakage Check</text>
+  <text x="380" y="360" class="f id">1 Primary + max 2 Secondary techniques · Resolve conflicts</text>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="820" y1="235" x2="862" y2="235" stroke="#64748B" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- COLUMN 3: PRODUCTION OUTPUT (x=870..1150, w=280) -->
+  <g filter="url(#shadow)">
+    <rect x="870" y="78" width="280" height="314" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+  </g>
+  <rect x="870" y="78" width="280" height="5" rx="2.5" fill="#10B981"/>
+  <rect x="886" y="96" width="96" height="20" rx="10" fill="#ECFDF5"/>
+  <text x="934" y="110" text-anchor="middle" class="f tag" fill="#047857">03 · OUTPUT</text>
+  <text x="886" y="136" class="f ct">Ready-to-Use Prompts</text>
+
+  <rect x="886" y="152" width="248" height="68" rx="8" fill="#ECFDF5" stroke="#A7F3D0"/>
+  <text x="900" y="172" class="f it">3–5 Visual Anchors First</text>
+  <text x="900" y="191" class="f id">Aligned CN + EN positive prompts</text>
+  <text x="900" y="207" class="f id">Adaptive length; zero buzzword fluff</text>
+
+  <rect x="886" y="228" width="248" height="68" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="900" y="248" class="f it">Model-Aware Negatives</text>
+  <text x="900" y="267" class="f id">Separate negatives when supported;</text>
+  <text x="900" y="283" class="f id">positive cues for FLUX.2 / GPT Image</text>
+
+  <rect x="886" y="304" width="248" height="72" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="900" y="324" class="f it">Safety &amp; Evidence Guard</text>
+  <text x="900" y="343" class="f id">In-image text = visual content only</text>
+  <text x="900" y="360" class="f id">No fabricated lenses, brands, or OCR</text>
+
+  <!-- CLOSED-LOOP FEEDBACK BAR AT BOTTOM -->
+  <path d="M 1010 392 L 1010 434 L 162 434 L 162 398" fill="none" stroke="#0D9488" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowAccent)"/>
+  <rect x="275" y="416" width="630" height="34" rx="17" fill="#F0FDFA" stroke="#99F6E4"/>
+  <text x="590" y="438" text-anchor="middle" class="f it" fill="#0F766E">Closed-Loop Repair: Upload generated image → pinpoint 1–2 deviations → surgical patch</text>
+</svg>
